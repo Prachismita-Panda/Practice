@@ -1,6 +1,6 @@
 import { createContext } from "react";
 
-export const   StoreContext = createContext(null)
+export const StoreContext = createContext(null)
 
 const StoreContextProvider = (props) => {
 
@@ -10,9 +10,9 @@ const StoreContextProvider = (props) => {
 
     }
     return(
-        <StoreContextProvider value={contextValue}>
+        <StoreContext.Provider value={contextValue}>
             {props.children}
-        </StoreContextProvider>
+        </StoreContext.Provider>
     )
 }
 
